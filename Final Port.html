@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <p class="int">
+   Hi!<br>I am<br>Hardik<br>Goel
+  </p>
+  <img class="intro" src="port2img.jpg">
+  <div class="topnav">
+    <a class="active" href="">Home</a>
+    <a href="#cont">Contact</a>
+    <a href="#bout">About</a>
+  </div>
+  <br>
+  <div class="Basic">
+    I am
+    A<br>
+    Web Developer
+  </div>
+  <!--------ABOUT-------------------------------------------->
+  <div id="bout">
+    <div class="container">
+      <div class="ro">
+        <div class="col1">
+           <img src="port2img.jpg">
+       </div>
+        <div class="col2">
+            <h1>
+              About Me
+            </h1>
+            <div class="ab">
+            <p>
+             <li> I am a future software engineer with a knack for solving complex problems and a curiosity for learning new technologies</li> <br> <li>I enjoy developing innovative solutions that improve the user experience and deliver value to the clients.    </li>      
+             </p></div>
+            <div class="tit">
+              <p class="link active" onclick="opentab('skills')">Skills</p>
+              <p class="link" onclick="opentab('Education')">Education</p>
+              <p class="link" onclick="opentab('My')">My Work</p>
+            </div>
+            <div class ="titl Active" id="skills">
+              <ul>
+                <li><span>WEB DEVELOPMENT</span></li>
+                <li><span>PYTHON</span></li>
+                <li><span>C</span></li>
+                <li><span>APP DEVELOPMENT</span></li>
+              </ul>
+            </div>
+            <div class ="titl" id="Education">
+              <ul>
+                <li><span>GD GOENKA PUBLIC SCHOOL</span></li>
+                <li><span>Pursuing B.tech from ABES Engineering College,Ghaziabad</span></li>
+              </ul>
+            </div>
+            <div class ="titl" id="My">
+                <ul>
+                  <li><span>Working on Health Management App</span></li>
+                  <li><span>Working on Agriculture Based Website</span></li>
+                </ul>
+              </div>
+         </div> 
+      </div>
+    </div>
+  </div>
+  <!----------------------------------MY WORK port----------------------------------------->
+
+    
+  <!-----------------contact---------------------------------------->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <div id="cont">
+  <div class="container">
+  <div class="row">
+  <div class="contact-left">
+  <h1 class="sub-title">Contact Me</h1>
+  <p> <i class="fa fa-envelope"></i>goelhardik26@gmail.com</p>
+  <p> <i class="fa fa-address-book"></i>8791255754</p>
+    <div class="social-icons">
+  <a href="https://www.linkedin.com/in/hardik-goel-328ab0215?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fa fa-linkedin"></i></a> 
+  <a href="https://www.instagram.com/hardikgoel2607_?utm_source=qr&igsh=djc4YWtqbTcybnlt"><i class="fa fa-instagram"></i></a> 
+  </div>
+  <a href="Hardik CV.pdf" download class="btn btn2">Download CV</a>
+  </div>
+
+  <div class="contact-right">
+    <form>
+      <input type="text" name="Name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+      <button type="submit" class="btn">submit</button>
+
+    </form>
+
+  </div>
+  </div>
+  </div>
+  </div>
+
+    <script>
+  var link= document.getElementsByClassName("link");
+  var titl= document.getElementsByClassName("titl");
+
+ 
+  function opentab(tabname){
+    for(links of  link){
+      links.classList.remove("active")
+
+    }
+    for(titls of  titl){
+      titls.classList.remove("Active")
+      
+    }
+     event.currentTarget.classList.add("active")
+     document.getElementById(tabname).classList.add("Active")
+  }
+</script>  
+</body>
+
+</html>
